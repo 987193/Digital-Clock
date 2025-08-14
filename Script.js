@@ -11,7 +11,7 @@ const showTime = ()=>{
     hr=hr<10?`0${hr}`:hr;
     min=min<10?`0${min}`:min;
     secs=secs<10?`0${secs}`:secs;
-    time.innerHTML= hm>12?(`${hr} : ${min} : ${secs}`):(`${hr-12} : ${min} : ${secs}`);
+    time.innerHTML= hr<12?(`${hr} : ${min} : ${secs}`):(`${hr-12} : ${min} : ${secs}`);
 
     timeformat.innerHTML = hm>12?"PM":"AM";
     
